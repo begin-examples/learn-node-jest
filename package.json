@@ -1,0 +1,18 @@
+{
+  "name": "arc-jest-test",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "npx sandbox",
+    "test": "NODE_ENV=testing QUIET=1 jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@architect/sandbox": "^1.7.2",
+    "@begin/data": "^1.2.0",
+    "jest": "^25.1.0",
+    "tiny-json-http": "^7.1.2"
+  }
+}

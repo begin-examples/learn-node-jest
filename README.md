@@ -1,4 +1,4 @@
-# Learn an example of Jest for Begin apps
+# JavaScript Testing with NodeJS and Jest on Begin.com
 
 ## Deploy your own
 

@@ -1,4 +1,4 @@
-# JavaScript Testing with NodeJS and Jest on Begin.com
+<img src="https://static.begin.app/learn-node-jest/readme-banner.png" width="724">
 
 ## Deploy your own
 

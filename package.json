@@ -1,14 +1,12 @@
 {
-  "name": "arc-jest-test",
+  "name": "begin-jest-example",
   "version": "1.0.0",
-  "description": "",
+  "description": "Begin example: learn JavaScript testing with Node.js and Jest",
   "scripts": {
     "start": "npx sandbox",
-    "test": "NODE_ENV=testing QUIET=1 jest"
+    "test": "jest"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "dependencies": {
     "@architect/sandbox": "^1.7.2",
     "@begin/data": "^1.2.0",

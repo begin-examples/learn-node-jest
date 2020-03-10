@@ -1,4 +1,5 @@
-<img src="https://static.begin.app/learn-node-jest/readme-banner.png" width="724">
+Learn: testing with Node.js & Jest
+<!-- <img src="https://static.begin.app/learn-node-jest/readme-banner.png" width="724"> -->
 
 $BADGE
 
@@ -7,6 +8,7 @@ $BADGE
 [![Deploy to Begin](https://static.begin.com/deploy-to-begin.svg)](https://begin.com/apps/create?template=https://github.com/begin-examples/learn-node-jest)
 
 Deploy your own clone of this app to Begin!
+
 
 ## Getting started
 

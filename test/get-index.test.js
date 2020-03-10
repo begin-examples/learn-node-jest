@@ -4,7 +4,7 @@ let sandbox = require('@architect/sandbox')
 
 // setup and teardown of @architect/sandbox to execute the test cases
 beforeAll(async () => {
-  await sandbox.start()
+  await sandbox.start({quiet:true})
 })
 
 afterAll(async () => {

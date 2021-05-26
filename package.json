@@ -10,7 +10,7 @@
   "dependencies": {
     "@architect/sandbox": "^3.3.7",
     "@begin/data": "^1.2.3",
-    "jest": "^26.6.3",
+    "jest": "^27.0.1",
     "tiny-json-http": "^7.3.0"
   }
 }

@@ -145,6 +145,8 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
  
   check_user_permission:
+    outputs:
+      has-permission: ${{ steps.check.outputs.has-permission }}
     runs-on: ubuntu-latest
     name: A job to check user's permission level
     steps:
@@ -159,14 +161,16 @@ jobs:
       # Use the output from the `check` step
       - name: Run only if user has sufficient permissions
         if: steps.check.outputs.has-permission
-        run: echo "HAS_PERMISSION=true" >> $GITHUB_ENV
+        run: echo "HAS_PERMISSION=true"
       - name: Run only if user has NOT sufficient permissions
         if: "! steps.check.outputs.has-permission"
-        run: echo "HAS_PERMISSION=false" >> $GITHUB_ENV
+        run: echo "HAS_PERMISSION=false"
 
+
+        
   staging_tests:
     timeout-minutes: 30
-    #    if: ${{env.HAS_PERMISSION == true}}
+    if: needs.check_user_permission.outputs.has-permission
     runs-on: ubuntu-latest
     env:
       #below sets default to true and will confirm later in workflow
@@ -178,8 +182,7 @@ jobs:
         node-version: [12.x]
 
     steps:
-      - name: check Permissions
-        run: echo ${{env.HAS_PERMISSION}}
+
       - name: Check out repo
         uses: actions/checkout@v2
 

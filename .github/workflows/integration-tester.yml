@@ -166,7 +166,7 @@ jobs:
 
   staging_tests:
     timeout-minutes: 30
-    if: ${{env.HAS_PERMISSION == true}}
+    #    if: ${{env.HAS_PERMISSION == true}}
     runs-on: ubuntu-latest
     env:
       #below sets default to true and will confirm later in workflow
@@ -178,6 +178,7 @@ jobs:
         node-version: [12.x]
 
     steps:
+      - run: echo "The value of HAS_PERMISSION is: ${{env.HAS_PERMISSION}}" 
       # Check for write permission
       - name: Check user permission
         id: check

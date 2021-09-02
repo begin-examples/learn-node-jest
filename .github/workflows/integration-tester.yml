@@ -178,6 +178,8 @@ jobs:
         node-version: [12.x]
 
     steps:
+      - name: check Permissions
+        run: echo ${{env.HAS_PERMISSION}}
       - name: Check out repo
         uses: actions/checkout@v2
 

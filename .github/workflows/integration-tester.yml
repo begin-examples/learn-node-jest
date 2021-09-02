@@ -146,6 +146,7 @@ jobs:
 
   staging_tests:
     timeout-minutes: 30
+    if: (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master') && failure()
     runs-on: ubuntu-latest
     env:
       #below sets default to true and will confirm later in workflow

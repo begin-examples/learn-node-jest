@@ -11,6 +11,6 @@
     "@architect/sandbox": "^4.5.2",
     "@begin/data": "^3.0.4",
     "jest": "^27.5.1",
-    "tiny-json-http": "^7.4.2"
+    "tiny-json-http": "^7.5.0"
   }
 }

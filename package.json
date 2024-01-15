@@ -2,15 +2,21 @@
   "name": "begin-jest-example",
   "version": "1.0.0",
   "description": "Begin example: learn JavaScript testing with Node.js and Jest",
+  "type": "module",
   "scripts": {
-    "start": "npx sandbox",
-    "test": "jest"
+    "start": "node index.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "coverage": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage"
+  },
+  "jest": {
+    "transform": {}
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "@architect/sandbox": "^4.5.2",
-    "@begin/data": "^3.0.4",
-    "jest": "^27.5.1",
-    "tiny-json-http": "^7.4.2"
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.4"
   }
 }
